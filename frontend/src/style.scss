@@ -1,0 +1,46 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+//@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.blockInfo {
+  border: 1px solid $primary;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &-header {
+    background: rgba(160, 180, 210, .7);
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+
+    &_icon {
+      width: 20px;
+
+      img {
+        max-width: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &-content {
+    padding: 10px 15px;
+
+    a {
+      display: block;
+      color: black;
+    }
+  }
+}
